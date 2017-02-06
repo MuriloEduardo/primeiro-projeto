@@ -1,0 +1,6 @@
+<h4>Cursos</h4>
+<ul class="collection">
+	<a [routerLink]="['/cursos', curso.id]" [queryParams]="{pagina:1}" class="collection-item" *ngFor="let curso of cursos">
+		{{ curso.title }}
+	</a>
+</ul>
